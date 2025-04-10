@@ -1,0 +1,12 @@
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/bin/Debug/net9.0/Model.deps.json
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/bin/Debug/net9.0/Model.dll
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/bin/Debug/net9.0/Model.pdb
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/obj/Debug/net9.0/Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/obj/Debug/net9.0/Model.AssemblyInfoInputs.cache
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/obj/Debug/net9.0/Model.AssemblyInfo.cs
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/obj/Debug/net9.0/Model.csproj.CoreCompileInputs.cache
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/obj/Debug/net9.0/Model.sourcelink.json
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/obj/Debug/net9.0/Model.dll
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/obj/Debug/net9.0/refint/Model.dll
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/obj/Debug/net9.0/Model.pdb
+/Users/mac/Documents/temp/ProductExercise/ProductExercise/Model/obj/Debug/net9.0/ref/Model.dll

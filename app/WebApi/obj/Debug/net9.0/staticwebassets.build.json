@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "Hash": "5RTtDXFuOP02jBkG9xy2c7DK3flZzogJ7GFxN/FEAT0=",
+  "Source": "WebApi",
+  "BasePath": "_content/WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApi/wwwroot",
+      "Source": "WebApi",
+      "ContentRoot": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/wwwroot/",
+      "BasePath": "_content/WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/obj/Debug/net9.0/compressed/r3elfp8bm6-4yqvf2f50d.gz",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "index#[.{fingerprint=4yqvf2f50d}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/wwwroot/index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ov0hbyw52p",
+      "Integrity": "tBG/xsDdWiUy9u36YDrbubqNw3dfOr4XGAdETRjlIpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/wwwroot/index.html",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/wwwroot/",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4yqvf2f50d",
+      "Integrity": "1H4mRtJsTL+du4x74pMpzC3IGWBGo5igTy59d08N9uI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.4yqvf2f50d.html",
+      "AssetFile": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/obj/Debug/net9.0/compressed/r3elfp8bm6-4yqvf2f50d.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000713266762"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1401"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tBG/xsDdWiUy9u36YDrbubqNw3dfOr4XGAdETRjlIpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 15:53:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1H4mRtJsTL+du4x74pMpzC3IGWBGo5igTy59d08N9uI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4yqvf2f50d"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1H4mRtJsTL+du4x74pMpzC3IGWBGo5igTy59d08N9uI="
+        }
+      ]
+    },
+    {
+      "Route": "index.4yqvf2f50d.html",
+      "AssetFile": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1H4mRtJsTL+du4x74pMpzC3IGWBGo5igTy59d08N9uI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 15:53:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4yqvf2f50d"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1H4mRtJsTL+du4x74pMpzC3IGWBGo5igTy59d08N9uI="
+        }
+      ]
+    },
+    {
+      "Route": "index.4yqvf2f50d.html.gz",
+      "AssetFile": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/obj/Debug/net9.0/compressed/r3elfp8bm6-4yqvf2f50d.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tBG/xsDdWiUy9u36YDrbubqNw3dfOr4XGAdETRjlIpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 15:53:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4yqvf2f50d"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tBG/xsDdWiUy9u36YDrbubqNw3dfOr4XGAdETRjlIpc="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/obj/Debug/net9.0/compressed/r3elfp8bm6-4yqvf2f50d.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000713266762"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1401"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tBG/xsDdWiUy9u36YDrbubqNw3dfOr4XGAdETRjlIpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 15:53:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1H4mRtJsTL+du4x74pMpzC3IGWBGo5igTy59d08N9uI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1H4mRtJsTL+du4x74pMpzC3IGWBGo5igTy59d08N9uI="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4802"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1H4mRtJsTL+du4x74pMpzC3IGWBGo5igTy59d08N9uI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 15:53:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1H4mRtJsTL+du4x74pMpzC3IGWBGo5igTy59d08N9uI="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "/Users/mac/Documents/temp/ProductExercise/ProductExercise/WebApi/obj/Debug/net9.0/compressed/r3elfp8bm6-4yqvf2f50d.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tBG/xsDdWiUy9u36YDrbubqNw3dfOr4XGAdETRjlIpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Mar 2025 15:53:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tBG/xsDdWiUy9u36YDrbubqNw3dfOr4XGAdETRjlIpc="
+        }
+      ]
+    }
+  ]
+}

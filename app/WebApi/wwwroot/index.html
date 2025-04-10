@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Adresses</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+<h1 class="text-center mb-4">Gestion des Adresses</h1>
+
+<!-- Formulaire -->
+<div class="mb-4">
+    <input type="hidden" id="addressId">
+    <input type="text" id="street" class="form-control mb-2" placeholder="Rue">
+    <input type="text" id="city" class="form-control mb-2" placeholder="Ville">
+    <input type="text" id="country" class="form-control mb-2" placeholder="Pays">
+    <input type="text" id="zipCode" class="form-control mb-2" placeholder="Code pastal">
+    <input type="number" id="userId" class="form-control mb-2" placeholder="ID Utilisateur">
+    <button class="btn btn-success" onclick="addOrUpdateAddress()">Enregistrer</button>
+</div>
+
+<!-- Table des Adresses -->
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Rue</th>
+        <th>Ville</th>
+        <th>Pays</th>
+        <th>Code postal</th>
+        <th>ID Utilisateur</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="addressTable"></tbody>
+</table>
+
+<button class="btn btn-danger" onclick="deleteUser1Addresses()">Supprimer Adresses de l'Utilisateur 1</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    const apiUrl = "/api/Address";
+
+    // Charger les adresses au démarrage
+    $(document).ready(() => {
+        loadAddresses();
+    });
+
+    // Récupérer et afficher toutes les adresses
+    function loadAddresses() {
+        $.get(apiUrl, function (data) {
+            let rows = "";
+            data.forEach(address => {
+                rows += `
+                <tr>
+                    <td>${address.addressId}</td>
+                    <td>${address.street}</td>
+                    <td>${address.city}</td>
+                    <td>${address.country}</td>
+                    <td>${address.zipCode}</td>
+                    <td>${address.clientId}</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm" onclick="editAddress(${address.addressId}, '${address.street}', '${address.city}', ${address.clientId}, '${address.country}', '${address.zipCode}')">Modifier</button>
+                        <button class="btn btn-danger btn-sm" onclick="deleteAddress(${address.addressId})">Supprimer</button>
+                    </td>
+                </tr>`;
+            });
+            $("#addressTable").html(rows);
+        });
+    }
+
+    // Ajouter ou modifier une adresse
+    function addOrUpdateAddress() {
+        let address = {
+            addressId: $("#addressId").val() || 0,
+            street: $("#street").val(),
+            city: $("#city").val(),
+            clientId: $("#userId").val(),
+            country: $("#country").val(),
+            zipCode: $("#zipCode").val()
+        };
+
+        if (address.addressId == 0) {
+            $.ajax({
+                url: apiUrl ,
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(address),
+                success: () => {
+                    loadAddresses();
+                    resetForm();
+                }
+            });
+        } else {
+            $.ajax({
+                url: apiUrl + "/" + address.addressId,
+                type: "PATCH",
+                contentType: "application/json",
+                data: JSON.stringify(address),
+                success: () => {
+                    loadAddresses();
+                    resetForm();
+                }
+            });
+        }
+    }
+
+    // Supprimer une adresse
+    function deleteAddress(id) {
+        $.ajax({
+            url: apiUrl + "/" + id,
+            type: "DELETE",
+            success: () => loadAddresses()
+        });
+    }
+
+    // Supprimer les adresses de l'utilisateur 1
+    function deleteUser1Addresses() {
+        $.ajax({
+            url: apiUrl + "/user/1",
+            type: "DELETE",
+            success: () => loadAddresses()
+        });
+    }
+
+    // Pré-remplir le formulaire pour la modification
+    function editAddress(id, street, city, clientId, country, zipcode) {
+        $("#addressId").val(id);
+        $("#street").val(street);
+        $("#city").val(city);
+        $("#userId").val(clientId);
+        $("#country").val(country);
+        $("#zipCode").val(zipcode);
+    }
+
+    // Réinitialiser le formulaire
+    function resetForm() {
+        $("#addressId").val("");
+        $("#street").val("");
+        $("#city").val("");
+        $("#userId").val("");
+        $("#country").val("");
+        $("#zipCode").val("");
+    }
+</script>
+</body>
+</html>
