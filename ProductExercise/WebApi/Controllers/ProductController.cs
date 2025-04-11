@@ -2,6 +2,7 @@ using DAL;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProductExercise;
+using WebApi.Dto;
 
 namespace WebApi.Controllers;
 
@@ -32,7 +33,7 @@ public class ProductController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateProduct([FromBody] Product productDto)
+    public async Task<IActionResult> CreateProduct([FromBody] ProductDto productDto)
     {
         if (!ModelState.IsValid) return BadRequest(ModelState);
 
@@ -52,7 +53,7 @@ public class ProductController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateProduct([FromRoute] int id, [FromBody] Product productDto)
+    public async Task<IActionResult> UpdateProduct([FromRoute] int id, [FromBody] ProductDto productDto)
     {
         if (!ModelState.IsValid) return BadRequest(ModelState);
 
